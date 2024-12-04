@@ -32,5 +32,10 @@ public class GuestBookServiceImpl implements GuestBookService{
     public int getGuestBookDelete(String gb_idx) {
         return guestBookMapper.getGuestBookDelete(gb_idx);
     }
+
+    @Override
+    public int getGuestBookWrite(GuestBookVO gvo) {
+        return guestBookMapper.getGuestBookWrite(gvo);
+    }
     
 }
