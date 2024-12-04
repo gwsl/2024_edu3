@@ -15,25 +15,21 @@ public class GuestBookServiceImpl implements GuestBookService{
 
     @Override
     public List<GuestBookVO> getGuestBookList() {
-        
         return guestBookMapper.getGuestBookList();
     }
 
     @Override
     public GuestBookVO getGuestBookById(String gb_idx) {
-        
         return guestBookMapper.getGuestBookById(gb_idx);
     }
 
     @Override
-    public int getGuestBookUpdate(GuestBookVO vo) {
-       
-        return guestBookMapper.getGuestBookUpdate(vo);
+    public int getGuestBookUpdate(GuestBookVO gvo) {
+        return guestBookMapper.getGuestBookUpdate(gvo);
     }
 
     @Override
     public int getGuestBookDelete(String gb_idx) {
-        
         return guestBookMapper.getGuestBookDelete(gb_idx);
     }
     

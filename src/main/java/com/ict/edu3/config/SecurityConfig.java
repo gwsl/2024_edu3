@@ -42,7 +42,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         // 특정 URL에 인증없이 허용
                         .requestMatchers("/api/members/join", "/api/members/login",
-                         "/api/guestbook/list", "/api/guestbook/detail/**").permitAll()
+                         "/api/guestbook/list", "/api/guestbook/detail/**", "/api/auth/generate-token").permitAll()
                         // 나머지는 인증 필요
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);

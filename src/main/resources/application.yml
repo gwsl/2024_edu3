@@ -19,5 +19,5 @@ mybatis:
 # 비밀키 사용(32바이트 길이)
 # 1 시간 = 1000ms * 60 * 60
 jwt:
-    secret : "abcdASDF1234QWER0987poiuPOIU"
+    secret : "KvYbRzDmZkVcBpEwHwFrTnGiAoKdJuBq"
     expiration : 3600000
